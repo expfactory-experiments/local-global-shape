@@ -225,14 +225,10 @@ jobs:
          key: docker-v1-{{ .Branch }}
          paths:
             - /tmp/cache/container.tar.gz
-      - store_artifacts:
-          path: /tmp/package
-          destination: package
       - persist_to_workspace:
           root: /tmp
           paths:
             - cache/container.tar.gz
-            - package
             - src
 
   update_cache:
@@ -322,9 +318,7 @@ jobs:
                           fi
                           echo "${tag}" >> tags.json
                     done
-                    echo "3. Adding package and manifests..."
-                    # Copy the package(s)
-                    cp /tmp/package/*.tar.gz ${PWD}
+                    echo "3. Adding manifests..."
                     # Copy the inspect to latest
                     cp "inspect-${DOCKER_TAG}.json" inspect-latest.json
                     # Write the tags json
