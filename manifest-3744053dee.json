@@ -1,0 +1,136 @@
+[
+    {
+        "Id": "sha256:bd93267ea7515b68627868e2f571b5eadbfd06f26cce63d7ae730c97970c8cb2",
+        "RepoTags": [
+            "expfactory/local-global-shape:3744053dee"
+        ],
+        "RepoDigests": [
+            "expfactory/local-global-shape@sha256:e9e5ba18965d858e615563831014aa1fac5f4d9a4b5ebc1a2121d3c95f1522fb"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2018-09-05T23:02:05.003329856Z",
+        "Container": "453b5c45fbb2de33fa96665991249a146e3d0b1622123803904247beb38f75c9",
+        "ContainerConfig": {
+            "Hostname": "453b5c45fbb2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "5000/tcp": {},
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "EXPFACTORY_STUDY_ID=expfactory",
+                "EXPFACTORY_SERVER=localhost",
+                "EXPFACTORY_CONTAINER=true",
+                "EXPFACTORY_DATA=/scif/data",
+                "EXPFACTORY_DATABASE=filesystem",
+                "EXPFACTORY_HEADLESS=false",
+                "EXPFACTORY_BASE=/scif/apps"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "EXPOSE 80/tcp"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:488964c7de48705796206190bcbdee2bc36d9befdc2a2763fc3abbc97b3c6c79",
+            "Volumes": null,
+            "WorkingDir": "/scif/apps",
+            "Entrypoint": [
+                "/bin/bash",
+                "/startscript.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {
+                "EXPERIMENT_local-global-shape": "/scif/apps/local-global-shape"
+            }
+        },
+        "DockerVersion": "17.09.0-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "5000/tcp": {},
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "EXPFACTORY_STUDY_ID=expfactory",
+                "EXPFACTORY_SERVER=localhost",
+                "EXPFACTORY_CONTAINER=true",
+                "EXPFACTORY_DATA=/scif/data",
+                "EXPFACTORY_DATABASE=filesystem",
+                "EXPFACTORY_HEADLESS=false",
+                "EXPFACTORY_BASE=/scif/apps"
+            ],
+            "Cmd": null,
+            "ArgsEscaped": true,
+            "Image": "sha256:488964c7de48705796206190bcbdee2bc36d9befdc2a2763fc3abbc97b3c6c79",
+            "Volumes": null,
+            "WorkingDir": "/scif/apps",
+            "Entrypoint": [
+                "/bin/bash",
+                "/startscript.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {
+                "EXPERIMENT_local-global-shape": "/scif/apps/local-global-shape"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 658666973,
+        "VirtualSize": 658666973,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:644879075e24394efef8a7dddefbc133aad42002df6223cacf98bd1e3d5ddde2",
+                "sha256:d7ff1dc646ba52a02312b535446d6c9b72cd09fda0480524e4828554efb2f748",
+                "sha256:686245e78935e73b737c9a82111c3c7df35f5529d06ce8c2f9a7cd32ec90b456",
+                "sha256:d73dd9e652956dccbbef716de4b172cc15fff644cc92fc69d221cc3a1cb89a39",
+                "sha256:2de391e51d731ba02b708038a7f98b7103061b916727bcd165e9ee6402f4cdde",
+                "sha256:3fba85f2748aa131a84f7452566ed4e14a06b416767f1c385beb4433d8ac0e03",
+                "sha256:f9fed064c37d012fd361cea8e99799b7452fb2879d3cfa88f3d80e0bc6294502",
+                "sha256:7faaf44c8ffa0426474ff5a79dbce5580de87095637897773b37cb49d3919245",
+                "sha256:9fa2d9b9638d7f54560866ae47d2fe5893e756bb5f36eaaaa6341673032368ef",
+                "sha256:f6959d536201d461badc16d0d2cb047ec3f994529ed36ac5c459245a5324bcbb",
+                "sha256:57723cbaa6a55238f04cc0033aad5a5cafa46bbd4ad0fd8ae49e13ef33d0eb56",
+                "sha256:4a09d3bc62e24d0d1c538ecd5474194b85881d649e2bc13e4074574fd02eed32",
+                "sha256:d1b05c76ce69f4749b52a2cc381ec4933d408bdc70f29fc180ded666afde0321",
+                "sha256:6baf1198c481493aca28b439a12203cb8b2f379cdf2c519add6859a678d59070",
+                "sha256:e374ecdb4111e7329f0e775b123b572bf350f3e865df132fc86a8ab43a061557",
+                "sha256:96fa6feaffa92268e791ffbe00d29837efb039d5b99902f191abb30f33d2c75b",
+                "sha256:f90afb9e31080171fb26ef9e3069598c05a53acbb170d956001cda057eafbe63",
+                "sha256:de66bfbd4f09a820d72ae839f30a2df8f4344af01da1e7f199715c9bf5dbfc59",
+                "sha256:bc8723748feba7da8559ae25e8d7fa0d7aa3b7d7ac066f757f37a4499334d7e4",
+                "sha256:9cf26b1aaa483f401dd467a8033748e1c29ec9ebdf95bee1dbde1bbf051e6159"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
