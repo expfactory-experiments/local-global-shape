@@ -31,6 +31,7 @@ $( document ).ready(function() {
     jsPsych.init({
              timeline: local_global_shape_experiment,
              display_element: "getDisplayElement",
+             auto_preload: false,
              fullscreen: true,
              on_trial_finish: function(data){
                addID('local-global-shape')
